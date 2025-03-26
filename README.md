@@ -50,14 +50,16 @@ Includes detailed API testing with Swagger, feature demonstration via screenshot
 
 ---
 
-### Installation
+## Installation
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/socialmedia-app.git
+git clone https://github.com/Khenidhruvin2001/socialmedia-app.git
 cd socialmedia-app
 
 MongoDB Configuration
-Edit your application.properties:
+Edit your application.properties
 
 spring.data.mongodb.uri=mongodb://localhost:27017/socialmedia
 
@@ -66,9 +68,7 @@ spring.datasource.url=jdbc:mysql://localhost:3306/socialmedia
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 
-▶️ Running the Application 
-Copy
-Edit
+▶️ Running the Application
 mvn clean install
 mvn spring-boot:run
 
