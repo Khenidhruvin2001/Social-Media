@@ -54,7 +54,7 @@ Includes detailed API testing with Swagger, feature demonstration via screenshot
 
 Clone the repository:
 
-```bash
+
 git clone https://github.com/Khenidhruvin2001/socialmedia-app.git
 cd socialmedia-app
 
