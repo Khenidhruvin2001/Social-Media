@@ -57,3 +57,10 @@ Clone the repository:
 ```bash
 git clone https://github.com/Khenidhruvin2001/socialmedia-app.git
 cd socialmedia-app
+
+⚙️ Configuration
+🟢 MongoDB
+Edit your application.properties:
+
+spring.data.mongodb.uri=mongodb://localhost:27017/socialmedia
+
