@@ -58,9 +58,12 @@ Clone the repository:
 git clone https://github.com/Khenidhruvin2001/socialmedia-app.git
 cd socialmedia-app
 
-⚙️ Configuration
-🟢 MongoDB
-Edit your application.properties:
+## ⚙️ Configuration
 
-spring.data.mongodb.uri=mongodb://localhost:27017/socialmedia
+| Component   | Configuration Details                                                                 |
+|-------------|----------------------------------------------------------------------------------------|
+| MongoDB     | `spring.data.mongodb.uri=mongodb://localhost:27017/socialmedia`                       |
+| MySQL       | `spring.datasource.url=jdbc:mysql://localhost:3306/socialmedia`<br>`spring.datasource.username=root`<br>`spring.datasource.password=yourpassword` |
+| Swagger     | Access at: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html) |
+| React Frontend | Access at: [http://localhost:3000](http://localhost:3000)                             |
 
