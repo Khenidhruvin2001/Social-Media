@@ -87,7 +87,10 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-- Swagger UI: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+## ✅ API Documentation
+Swagger UI available at:  
+👉 [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+
 - React Frontend: [http://localhost:3000](http://localhost:3000)
 
 ---
@@ -132,3 +135,69 @@ mvn spring-boot:run
 | GET    | /api/likes/post/{postId}      | Get likes for a post    |
 
 ---
+
+## 📦 Additional Modules & Endpoints
+
+### 5. 💬 Comments (MongoDB)
+| Method | Endpoint                     | Description               |
+|--------|------------------------------|---------------------------|
+| POST   | `/api/comments`              | Add a comment             |
+| GET    | `/api/comments/post/{postId}`| Get comments for a post   |
+
+### 6. 🏷️ Tag Management
+| Method | Endpoint            | Description        |
+|--------|---------------------|--------------------|
+| POST   | `/api/tags`         | Create a tag       |
+| GET    | `/api/tags`         | Get all tags       |
+| DELETE | `/api/tags/{id}`    | Delete a tag by ID |
+
+### 7. 🔔 Notifications (MongoDB)
+| Method | Endpoint                            | Description                  |
+|--------|-------------------------------------|------------------------------|
+| POST   | `/api/notifications`                | Create notification          |
+| PUT    | `/api/notifications/read/{id}`      | Mark notification as read    |
+| GET    | `/api/notifications/user/{userId}`  | Get notifications by user ID |
+
+### 8. ✉️ Messages (MongoDB)
+| Method | Endpoint                          | Description              |
+|--------|-----------------------------------|--------------------------|
+| POST   | `/api/messages`                   | Send a message           |
+| GET    | `/api/messages/user/{userId}`     | Get messages by user ID  |
+
+### 9. 🧩 Post-Tag Mapping
+| Method | Endpoint              | Description                |
+|--------|-----------------------|----------------------------|
+| POST   | `/api/post-tags`      | Associate tag with post    |
+| GET    | `/api/post-tags`      | Get all post-tag mappings  |
+| DELETE | `/api/post-tags/{id}` | Remove tag from post       |
+
+---
+
+## 📊 MongoDB Collections Used
+- `comments`
+- `likes`
+- `notifications`
+- `messages`
+
+## 🔧 Example SQL Tables
+- `users`
+- `posts`
+- `follows`
+- `tags`
+- `post_tags`
+- `media`
+
+---
+
+## 📈 Future Enhancements
+- 🔐 JWT Authentication  
+- 🛡️ Role-Based Access Control  
+- 🔍 Full-text Post Search  
+- 📱 Mobile App with React Native / Flutter  
+- 📊 Dashboard with analytics  
+
+---
+
+## 📜 License
+MIT License © 2025
+
