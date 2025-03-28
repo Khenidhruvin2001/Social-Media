@@ -1,0 +1,257 @@
+1.POST /api/users
+
+{
+  "name": "Dhruvin",
+  "email": "dhruvin@example.com",
+  "password": "Dhruvin@2001",
+  "posts": [
+    {
+      "content": "This is my first post"
+    }
+  ]
+}
+
+
+1. GET all users
+Use GET /api/users to verify that user dhruvin is now listed
+
+
+2.update user perticaulaer id 22
+{
+  "id": 22,
+  "name": "Dhruvin Kheni Irnfkv",
+  "email": "Dhruvin120135@gmail.com",
+  "password": "1345",
+  "posts": [
+    {
+      "id": 17,
+      "content": "This is updated post"
+    }
+  ]
+}
+
+
+3. Delete means 200 means ok(success of deletion)
+
+4.POST /api/users
+
+
+{
+  "name": "Test Demo",
+  "email": "testdemo@gmail.com",
+  "password": "dhurvin34@",
+  "posts": [
+    {
+      "content": "This is my test post!"
+    }
+  ]
+}
+
+
+
+## Notification
+
+1.PUT
+/api/notifications/read/{id}  (using mongodb notification object ID)
+
+2.POST
+/api/notifications
+
+
+{
+  "id": "3",
+  "userId": 85,
+  "type": "Java Notification",
+  "content": "string",
+  "read": false
+}
+
+3.GET
+/api/notifications/user/{userId}
+
+85 (userID which is available in notification)
+
+##tag-controller
+
+1. GET
+/api/tags
+
+(first put 
+{
+  "name": "Dhruvin Kheni Java tag"
+}
+) 
+
+after automatically get this 
+
+
+2.POST
+/api/tags
+{
+  "name": "This is my first Tag id "
+}
+
+
+3.delete 1 id.
+
+
+##report-controller
+
+1.GET
+/api/reports
+
+first put report 
+  {
+    "id": 2,
+    "userId": 7,
+    "reason": "This user is not helpful",
+    "type": "bad",
+    "targetId": 3
+  }
+
+
+2.POST
+/api/reports
+
+ {
+    "userId": 7,
+    "reason": "This is a report test",
+    "type": "bad",
+    "targetId": 3
+  }
+
+3.type only id to delte
+
+##Post-controller
+
+1.GET
+/api/posts
+
+First post in Put method 
+
+{
+  "userId": 6,
+  "content": "Just added post for check",
+  "media": [],
+  "tags": []
+}
+
+2.put 
+same add like above first after you will see above value.
+
+3. Delete type just 
+
+## post-tag-controller
+
+2.Post tag
+
+{
+  "post": { "id": 9 },
+  "tags": [
+    {
+      "id": 9007199254740991,
+      "name": "Go ahead"
+    }
+  ]
+}
+
+1.Get this after and excute
+
+3.delete
+
+##message-controller
+
+1.Post Demo 
+
+{
+  "id": "string",
+  "senderId": 7,
+  "receiverId": 5,
+  "text": "Hello Nina,how are you doing today?",
+  "timestamp": "10:34"
+}
+
+2. Get Api/message
+type sender id 7 in whichh is in database.
+
+## media-controller
+
+1.POST
+/api/media ID(postid which is in post)
+
+{
+  "url": "https://example.com/image.png",
+  "type": "image",
+  "post": {
+    "id": 9
+  }
+}
+
+## like-controller
+
+1.POST
+/api/likes
+
+{
+  "id": "27",
+  "postId": 25,
+  "userId": 8,
+  "likedAt": "2025-03-25T16:55:27.956Z"
+}
+
+
+2.DELETE
+/api/likes
+
+postId == which in using post method
+userId == which in using post method 
+
+3.GET
+/api/likes/user/{userId}
+
+Just a type of userid which is in post.
+
+
+##follow-controller
+
+1.POST
+/api/follows/unfollow
+
+{
+  "followerId": 6,
+  "followingId": 18
+}
+
+2. POST
+/api/follows/follow
+
+{
+  "followerId": 12,
+  "followingId": 23
+}
+
+
+3.GET
+/api/follows/user/{userId}
+
+userID = 6
+
+#comment-controller
+1.POST
+/api/comments
+
+{
+  "id": "13",
+  "authorName": "Ander macalaom",
+  "postId": "15",
+  "userId": "23",
+  "text": "I'm impressive with your work",
+  "timestamp": "2025-03-25T18:25:07.506Z"
+}
+
+2.GET
+/api/comments/post/{postId}
+
+postID = 7
+
+
